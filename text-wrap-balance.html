@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dev's guide to text-wrap: balance."
+    />
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Developer's Guide to text-wrap: balance</title>
+  </head>
+  <body class="dark">
+    <div class="nav-container">
+        <div class="navbar">
+            <img src="./logo-white.png" alt="logo" class="logo"/>
+            <h2>Anisha Latchman</h2>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="title-block">
+            <h1 class="balance">Developer's Guide to text-wrap: balance</h1>
+            <p class="balance">New CSS feature enables even text distribution across lines.</p>
+        </div>
+
+        <hr class="line" />
+        <div class="profile-block">
+            <div class="round-container">
+                <img src="./anisha-memoji.png" alt="Profile" class="profile-pic"/>
+            </div>
+            <div class="author">
+                <p class="caption">December 15, 2023</p>
+                <p class="caption">By Anisha Latchman</p>
+            </div>
+        </div>
+        <hr class="line" />
+
+        <div class="text-block">
+            <p>New to Safari Technology Preview 183 is <code>text-wrap: balance</code>.</p>
+            <p>Up until now, Webkit has only supported two options for 
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap">text-wrap</a>: 
+                <code>wrap</code> and <code>nowrap</code>.</p>
+            <p>
+                With the introduction of the text-wrap-style property (shorthand: text-wrap), there is now a way for the browser to balance text across multiple lines. Balanced text is quicker and easier to read than unbalanced text and is thus desirable to many designers. Previous methods of balancing text include forcing line breaks with <code>&lt;br&gt;</code>, which is not suitable for the responsive playground of the web.
+            </p>
+        </div>
+
+        <div class="text-block">
+            <h2>How balanced wrapping works</h2>
+            <p><code>text-wrap: balance</code> prioritizes aesthetics and readability over performance speed to evenly distribute text across lines. Algorithmically, this feature minimizes the average difference in line lengths across the text block.</p>
+            <img class="border" src="./text-wrap-comparisons.png" alt="Text Wrap Comparisons"/>
+            <p class="caption">Line length differences shown between different text-wrap styles.</p>
+        </div>
+
+        <div class="text-block">
+            <p>Take a look at the following heading with <code>text-wrap: wrap</code>.</p>
+        </div>
+            <img class="border" src="./unbalanced.png" alt="Unbalanced"/>
+        <div class="text-block">
+            <p>Visually, it feels off. And the <a target="_blank" href="https://fonts.google.com/knowledge/glossary/widows_orphans">
+            orphaned</a> word reduces readability.</p>
+        <p>Now take a look at this heading with <code>text-wrap: balance</code>.</p>
+        </div>
+            <img class="border" src="./balanced.png" alt="Balanced"/>
+        <div class="text-block">
+            <p>Much better, right? Plus, the balancing work is offloaded to the browser, so it remains responsive across all screen sizes.</p>
+        </div>
+        <img class="border" src="./responsive.gif" alt="Responsive demo"/>
+        <p class="caption">Demonstrating dynamic text-wrap balancing.</p>
+
+        <div class="text-block">
+            <h2>Best usage</h2>
+            <p>Because of the extensive processing required to balance lines, <code>text-wrap: balance</code> is best used for headings and titles, not long bodies of text. Balancing is not supported for text blocks longer than 10 lines. When balance is used on a body of text longer than 10 lines, it instead uses the default <code>text-wrap: wrap</code> behavior. 
+            </p>
+        </div>
+
+        <div class="text-block">
+            <h2>CSS syntax</h2>
+            <p>To apply balanced text-wrapping, include the <code>text-wrap-style</code> (or shorthand <code>text-wrap</code>) property with the value <code>balance</code> in your declaration block.
+            </p>
+            <div class="center">
+                <img class="border" src="./css.png" alt="CSS syntax"/>
+                <p class="caption">Example CSS of applying text-wrap: balance to h1 selector.</p>
+            </div>
+            <p>Or, try it out on codepen:</p>
+            <p class="codepen" data-height="600" data-default-tab="html,result" data-slug-hash="NWoZrox" data-editable="true" data-user="Anisha-Latchman" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/Anisha-Latchman/pen/NWoZrox">
+                text-wrap: balance demo</a> by Anisha Latchman (<a href="https://codepen.io/Anisha-Latchman">@Anisha-Latchman</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+
+        <div class="text-block">
+            <h2>Browser support</h2>
+            <p>As of now, the 
+                <a target="_blank" href="https://caniuse.com/css-text-wrap-balance">browser support</a>
+                 for <code>text-wrap: balance</code> includes:</p>
+            <ul>
+                <li>Safari Technology Preview</li>
+                <li>Chrome</li>
+                <li>Edge</li>
+                <li>Firefox</li>
+            </ul>
+        </div>
+
+        <div class="text-block">
+            <h2>Feedback</h2>
+            <p>We hope this blog helps you navigate the ever-evolving world of web technologies. Got a topic you'd like us to cover? Reach out to us at 
+                <a target="_blank" href="mailto:anishalatchman@gmail.com">anishalatchman@gmail.com</a>.
+            </p>
+        </div>
+    </div>
+    <img src="./anisha-memoji.png" alt="Profile" class="center memoji"/>
+    <div class="footer">
+        <div class="navbar">
+            <img src="./logo-white.png" alt="logo" class="logo"/>
+        </div>
+    </div>
+    </body>
+</html>
