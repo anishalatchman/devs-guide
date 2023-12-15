@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+:root {
+    color-scheme: dark;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -140,6 +144,11 @@ p, ul {
     margin-right: 1rem;
 }
 
+.code-pen {
+    margin-top: -30px;
+    margin-bottom: -20px;
+}
+
 .line {
     opacity: 0.2;
 }
@@ -219,4 +228,3 @@ code {
         width: 50%;
     }
 }
-
