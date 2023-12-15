@@ -149,7 +149,7 @@ p, ul {
     align-items: center;    
 } 
 
-.text-block > img {
+.body-container > img {
     width: 100%;
 }
 
