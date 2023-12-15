@@ -15,7 +15,7 @@
   <body class="dark">
     <div class="nav-container">
         <div class="navbar">
-            <img src="./logo-white.png" alt="logo" class="logo"/>
+            <img src="./logo-white.png" alt="Anisha Latchman Logo." class="logo"/>
             <h2>Anisha Latchman</h2>
         </div>
     </div>
@@ -28,7 +28,7 @@
         <hr class="line" />
         <div class="profile-block">
             <div class="round-container">
-                <img src="./anisha-memoji.png" alt="Profile" class="profile-pic"/>
+                <img src="./anisha-memoji.png" alt="Anisha Latchman Memoji." class="profile-pic"/>
             </div>
             <div class="author">
                 <p class="caption">December 15, 2023</p>
@@ -38,7 +38,7 @@
         <hr class="line" />
 
         <div class="text-block">
-            <p>New to Safari Technology Preview 183 is <code>text-wrap: balance</code>.</p>
+            <p>Typography on the web is leveling up. New to Safari Technology Preview 183 is <code>text-wrap: balance</code>.</p>
             <p>Up until now, Webkit has only supported two options for 
                 <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap">text-wrap</a>: 
                 <code>wrap</code> and <code>nowrap</code>.</p>
@@ -50,29 +50,29 @@
         <div class="text-block">
             <h2>How balanced wrapping works</h2>
             <p><code>text-wrap: balance</code> prioritizes aesthetics and readability over performance speed to evenly distribute text across lines. Algorithmically, this feature minimizes the average difference in line lengths across the text block.</p>
-            <img class="border" src="./text-wrap-comparisons.png" alt="Text Wrap Comparisons"/>
+            <img class="border" src="./text-wrap-comparisons.png" alt="Line length differences shown between different text-wrap styles."/>
             <p class="caption">Line length differences shown between different text-wrap styles.</p>
         </div>
 
         <div class="text-block">
             <p>Take a look at the following heading with <code>text-wrap: wrap</code>.</p>
         </div>
-            <img class="border" src="./unbalanced.png" alt="Unbalanced"/>
+            <img class="border" src="./unbalanced.png" alt="Example heading with text-wrap: wrap applied."/>
         <div class="text-block">
             <p>Visually, it feels off. And the <a target="_blank" href="https://fonts.google.com/knowledge/glossary/widows_orphans">
             orphaned</a> word reduces readability.</p>
         <p>Now take a look at this heading with <code>text-wrap: balance</code>.</p>
         </div>
-            <img class="border" src="./balanced.png" alt="Balanced"/>
+            <img class="border" src="./balanced.png" alt="Example heading with text-wrap: balanced applied."/>
         <div class="text-block">
             <p>Much better, right? Plus, the balancing work is offloaded to the browser, so it remains responsive across all screen sizes.</p>
         </div>
-        <img class="border" src="./responsive.gif" alt="Responsive demo"/>
+        <img class="border" src="./responsive.gif" alt="Demonstrating dynamic text-wrap balancing."/>
         <p class="caption">Demonstrating dynamic text-wrap balancing.</p>
 
         <div class="text-block">
             <h2>Best usage</h2>
-            <p>Because of the extensive processing required to balance lines, <code>text-wrap: balance</code> is best used for headings and titles, not long bodies of text. Balancing is not supported for text blocks longer than 10 lines. When balance is used on a body of text longer than 10 lines, it instead uses the default <code>text-wrap: wrap</code> behavior. 
+            <p>Because of the extensive processing required to balance lines, <code>text-wrap: balance</code> is best used for headings and titles, not long bodies of text. In fact, when balance is used on a body of text longer than 10 lines, it instead defaults to the <code>text-wrap: wrap</code> behavior to prioritize performance speed. 
             </p>
         </div>
 
@@ -81,10 +81,14 @@
             <p>To apply balanced text-wrapping, include the <code>text-wrap-style</code> (or shorthand <code>text-wrap</code>) property with the value <code>balance</code> in your declaration block.
             </p>
             <div class="center">
-                <img class="border" src="./css.png" alt="CSS syntax"/>
+                <img class="border" src="./css.png" alt="Example CSS of applying text-wrap: balance to h1 selector."/>
                 <p class="caption">Example CSS of applying text-wrap: balance to h1 selector.</p>
             </div>
-            <p>Or, try it out on codepen:</p>
+            
+        </div>
+        <p>Or, try it out on codepen:</p>
+        </div>
+        <div class="nav-container code-pen">
             <p class="codepen" data-height="600" data-default-tab="html,result" data-slug-hash="NWoZrox" data-editable="true" data-user="Anisha-Latchman" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                 <span>See the Pen <a href="https://codepen.io/Anisha-Latchman/pen/NWoZrox">
                 text-wrap: balance demo</a> by Anisha Latchman (<a href="https://codepen.io/Anisha-Latchman">@Anisha-Latchman</a>)
@@ -93,6 +97,7 @@
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </div>
 
+        <div class="body-container">
         <div class="text-block">
             <h2>Browser support</h2>
             <p>As of now, the 
@@ -113,10 +118,10 @@
             </p>
         </div>
     </div>
-    <img src="./anisha-memoji.png" alt="Profile" class="center memoji"/>
+    <img src="./anisha-memoji.png" alt="Anisha Latchman Memoji." class="center memoji"/>
     <div class="footer">
         <div class="navbar">
-            <img src="./logo-white.png" alt="logo" class="logo"/>
+            <img src="./logo-white.png" alt="Anisha Latchman Logo." class="logo"/>
         </div>
     </div>
     </body>
